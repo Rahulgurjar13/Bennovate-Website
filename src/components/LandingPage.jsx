@@ -5,7 +5,7 @@ import EventsGrid from "./EventsGrid";
 import SponsorMarquee from "./SponsorMarquee ";
 import Footer from "./Footer";
 import KeyFeatures from "./KeyFeatures";
-import AboutGES from "./aboutGes";
+import AboutGES from "./AboutGES";
 import HubVisionaries from "./HubVisionaries";
 import AboutGES2 from "./AboutGES2";
 import EventCard from "./EventCard ";
