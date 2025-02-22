@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Button from "./button";
+import Button from "./Button";
 
 const AgendaSection = () => {
   const [activeDay, setActiveDay] = useState(1);
