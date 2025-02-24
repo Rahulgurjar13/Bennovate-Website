@@ -81,7 +81,7 @@ const Navbar = ({ setShowRegisterForm }) => {
     <nav className="w-full py-4 px-4 sm:px-6 flex justify-between items-center bg-black/50 backdrop-blur-sm fixed top-0 z-50">
       <div className="flex items-center">
         <img
-          src="src/components/Spark-Cell-1-removebg-preview.png"
+          src="/images/Spark-Cell-1-removebg-preview.png"
           alt="Logo"
           className="w-16 sm:w-20 h-12 sm:h-15 cursor-pointer"
           onClick={() => scrollToSection("home")}
@@ -173,7 +173,7 @@ const HeroHeader = () => {
       <div className="flex justify-center mt-20 mb-4 sm:mb-6">
         <div className="rounded-lg p-2 flex items-center gap-12">
           <img
-            src="src/components/4.0.png"
+            src="/images/4.0.png"
             alt="Startup Hub"
             className="w-full max-w-[280px] sm:max-w-[400px] h-auto"
           />
