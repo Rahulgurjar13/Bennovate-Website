@@ -146,10 +146,10 @@ const Footer = () => {
 
           <div className="bg-gray-800 bg-opacity-40 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-purple-500 transition-colors duration-300">
             <p className="text-gray-200 leading-relaxed">
-              "Bennovate 3.0" – A Prestigious Entrepreneurship Summit
+              "Bennovate 4.0" – A Prestigious Entrepreneurship Summit
             </p>
             <p className="text-2xl font-bold mt-2 bg-gradient-to-r from-purple-400 to-green-400 bg-clip-text text-transparent">
-              20th - 23rd November 2024
+              21th - 22rd November 2024
             </p>
             
             <div className="mt-6 pt-6 border-t border-gray-700">

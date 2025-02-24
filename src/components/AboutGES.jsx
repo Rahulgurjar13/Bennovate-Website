@@ -24,7 +24,7 @@ const AboutGES = () => {
           </div>
           
           <p className="text-gray-300 text-base md:text-lg leading-relaxed">
-          Bennett Hatchery, under the Centre for Innovation and Entrepreneurship, Bennett University, proudly presents "Bennovate 3.0" – a prestigious Entrepreneurship Summit on 22nd and 23rd November 2024. Supported by StartinUP (UP Government) and WASME (World Association of Small and Medium Enterprises), the summit will feature a range of dynamic events tailored for young startups, school innovators, aspiring entrepreneurs, government officials, corporate leaders, investors, and academia.
+          Bennett Hatchery, under the Centre for Innovation and Entrepreneurship, Bennett University, proudly presents "Bennovate 4.0" – a prestigious Entrepreneurship Summit on 22nd and 23rd November 2024. Supported by StartinUP (UP Government) and WASME (World Association of Small and Medium Enterprises), the summit will feature a range of dynamic events tailored for young startups, school innovators, aspiring entrepreneurs, government officials, corporate leaders, investors, and academia.
 
 Join us for a celebration of innovation and entrepreneurship at its finest!
           </p>
