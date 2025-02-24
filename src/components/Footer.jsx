@@ -133,7 +133,7 @@ const Footer = () => {
             <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-green-600 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
             <div className="relative flex items-center space-x-4 bg-gray-900 p-4 rounded-lg">
               <img
-                src="src/components/4.0.png"
+                src="/images/4.0.png"
                 className="w-20 h-16 object-contain transition-transform hover:scale-110 duration-300"
                 alt="E-Cell Logo"
               />
