@@ -128,33 +128,33 @@ const EventsGrid = () => {
         </div>
       </div>
 
-      {/* Main content container */}
-      <div className="relative container mx-auto px-4 py-16">
-        {/* Enhanced title with gradient and animation */}
-        <h1 className="text-8xl font-bold mb-20 text-center bg-gradient-to-r from-red-500 via-white to-red-500 bg-clip-text text-transparent">
+      {/* Main content container with responsive padding */}
+      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
+        {/* Responsive title */}
+        <h1 className="text-4xl sm:text-6xl lg:text-8xl font-bold mb-10 sm:mb-16 lg:mb-20 text-center bg-gradient-to-r from-red-500 via-white to-red-500 bg-clip-text text-transparent">
           EVENTS
         </h1>
 
-        {/* Enhanced grid layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Responsive grid layout */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {events.map(event => (
             <div
               key={event.id}
-              className="bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-2xl p-8
+              className="bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-2xl p-4 sm:p-6 lg:p-8
                        transition-all duration-500 hover:shadow-xl hover:shadow-green-400/30
                        hover:-translate-y-2 group border border-gray-800 hover:border-green-400/30"
             >
-              <div className="flex justify-between items-start mb-8">
-                <h2 className="text-red-500 font-bold text-2xl tracking-wider">
+              <div className="flex justify-between items-start mb-4 sm:mb-6 lg:mb-8">
+                <h2 className="text-red-500 font-bold text-lg sm:text-xl lg:text-2xl tracking-wider">
                   {event.title}
                 </h2>
                 <ArrowUpRight
-                  className="text-red-500 h-6 w-6 transition-all duration-500
+                  className="text-red-500 h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 transition-all duration-500
                            group-hover:translate-x-1 group-hover:-translate-y-1
                            group-hover:scale-110 group-hover:text-green-400"
                 />
               </div>
-              <div className="w-40 h-40 mx-auto text-red-500 transition-all duration-500
+              <div className="w-24 h-24 sm:w-32 sm:h-32 lg:w-40 lg:h-40 mx-auto text-red-500 transition-all duration-500
                             group-hover:text-green-400 group-hover:scale-110 transform">
                 {event.icon}
               </div>

@@ -29,7 +29,6 @@ const KeyFeatures = () => {
     },
   ];
 
-  // Animation trigger on scroll
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -49,7 +48,6 @@ const KeyFeatures = () => {
     return () => observer.disconnect();
   }, []);
 
-  // Custom counter animation
   const AnimatedCounter = ({ end, duration }) => {
     const [count, setCount] = useState(0);
     const countRef = useRef(null);
@@ -83,10 +81,10 @@ const KeyFeatures = () => {
   return (
     <section 
       ref={sectionRef} 
-      className="py-16 bg-gradient-to-br "
+      className="py-16 bg-gradient-to-br"
     >
       <div className="container mx-auto px-4">
-        <h2 className={`text-4xl font-bold text-center mb-16 text-white relative left-[300px] transition-all duration-1000 bg-purple-700 rounded-3xl p-2 w-[600px] ${
+        <h2 className={`text-4xl md:text-4xl font-bold text-center mb-16 text-white relative md:left-[300px] transition-all duration-1000 bg-purple-700 rounded-3xl p-2 w-full md:w-[600px] ${
           startAnimation ? 'opacity-100' : 'opacity-0'
         }`}>
           Our <span className="text-green-400">Impact</span> in Numbers
@@ -96,7 +94,7 @@ const KeyFeatures = () => {
           {features.map((feature, index) => (
             <div
               key={feature.label}
-              className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-8"
+              className="w-full md:w-1/3 lg:w-1/4 px-4 mb-8"
               onMouseEnter={() => setHovered(index)}
               onMouseLeave={() => setHovered(null)}
             >
@@ -114,7 +112,6 @@ const KeyFeatures = () => {
                   transitionDelay: `${index * 150}ms`,
                 }}
               >
-                {/* Animated background particles */}
                 {hovered === index && (
                   <>
                     <div className="absolute w-12 h-12 rounded-full bg-white/10 -top-6 -right-6 animate-pulse"></div>
@@ -125,7 +122,6 @@ const KeyFeatures = () => {
                   </>
                 )}
                 
-                {/* Icon with animated ring */}
                 <div className="relative mx-auto w-20 h-20 mb-6 flex items-center justify-center">
                   <div className={`absolute inset-0 rounded-full ${
                     hovered === index ? 'bg-blue-500/20' : 'bg-blue-500/10'
@@ -136,10 +132,9 @@ const KeyFeatures = () => {
                   <span className="text-4xl relative z-10">{feature.icon}</span>
                 </div>
                 
-                {/* Number counter with floating suffix */}
                 <div className="text-center mb-4">
                   <div className="relative inline-flex items-center">
-                    <span className="text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
+                    <span className="text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
                       {startAnimation ? (
                         <AnimatedCounter end={feature.number} duration={2.5} />
                       ) : (
@@ -154,7 +149,6 @@ const KeyFeatures = () => {
                   </div>
                 </div>
                 
-                {/* Label with underline animation */}
                 <h3 className="text-xl text-center font-medium mb-3 text-white relative">
                   {feature.label}
                   <span className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 h-0.5 bg-blue-500 transition-all duration-500 ${
@@ -162,7 +156,6 @@ const KeyFeatures = () => {
                   }`}></span>
                 </h3>
                 
-                {/* Description with fade-in */}
                 <p className={`text-sm text-center transition-all duration-500 ${
                   hovered === index ? 'opacity-100 text-gray-100' : 'opacity-60 text-gray-400'
                 }`}>

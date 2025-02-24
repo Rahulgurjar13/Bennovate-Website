@@ -55,27 +55,27 @@ const ProfileGrid = () => {
   const [animateTitle, setAnimateTitle] = useState(false);
   
   useEffect(() => {
-    // Trigger animation after component mount
     setAnimateTitle(true);
   }, []);
 
   return (
-    <div className="max-w-5xl mx-auto p-4 bg-black">
-      {/* Modern Title Section */}
-      <div className="mb-12 text-center">
-        <h1 className="text-7xl md:text-7xl font-bold tracking-wider text-white relative inline-block">
+    <div className="max-w-5xl mx-auto p-4 sm:p-6 lg:p-8 bg-black">
+      {/* Title Section */}
+      <div className="mb-8 sm:mb-12 text-center">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-wider text-white relative inline-block">
           PAST SPEAKERS
           <div className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-blue-500 via-green-400 to-blue-500 transition-all duration-1000 ease-out ${animateTitle ? 'w-full' : 'w-0'}`}></div>
         </h1>
         
-        {/* Decorative accent element */}
-        <div className={`mt-4 mx-auto h-6 w-6 rounded-full bg-blue-500 relative overflow-hidden transition-all duration-700 ${animateTitle ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`}>
+        {/* Decorative accent */}
+        <div className={`mt-3 sm:mt-4 mx-auto h-4 sm:h-6 w-4 sm:w-6 rounded-full bg-blue-500 relative overflow-hidden transition-all duration-700 ${animateTitle ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`}>
           <div className="absolute inset-1 rounded-full bg-black"></div>
           <div className={`absolute inset-2 rounded-full bg-green-400 transition-opacity duration-1000 ${animateTitle ? 'opacity-100' : 'opacity-0'}`}></div>
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      {/* Profile Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
         {profiles.map((profile) => (
           <ProfileCard
             key={profile.id}
@@ -95,11 +95,11 @@ const ProfileCard = ({ name, position, imageUrl }) => {
       <img
         src={imageUrl}
         alt={name}
-        className="w-full h-64 object-cover transition-transform duration-500 ease-out group-hover:scale-110"
+        className="w-full h-48 sm:h-56 md:h-64 object-cover transition-transform duration-500 ease-out group-hover:scale-110"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent flex flex-col justify-end p-4 text-center">
-        <h2 className="text-1xl font-bold text-white transform transition-transform duration-300 group-hover:translate-y-0 group-hover:scale-105">{name}</h2>
-        <p className="text-sm text-white/90 transform transition-all duration-300 opacity-80 group-hover:opacity-100">{position}</p>
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent flex flex-col justify-end p-3 sm:p-4 text-center">
+        <h2 className="text-base sm:text-lg md:text-xl font-bold text-white transform transition-transform duration-300 group-hover:translate-y-0 group-hover:scale-105">{name}</h2>
+        <p className="text-xs sm:text-sm text-white/90 transform transition-all duration-300 opacity-80 group-hover:opacity-100">{position}</p>
         <div className="h-0.5 w-0 bg-green-400 mx-auto mt-2 transition-all duration-300 group-hover:w-3/4"></div>
       </div>
       <div className="absolute inset-0 bg-pink-400 opacity-0 transition-opacity duration-300 group-hover:opacity-10"></div>

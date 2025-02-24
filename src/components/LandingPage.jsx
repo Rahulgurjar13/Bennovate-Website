@@ -260,15 +260,15 @@ const HeroSection = ({ setShowRegisterForm }) => {
             <ul className="space-y-3 sm:space-y-4">
               <li className="flex justify-between items-center">
                 <span>Early Bird</span>
-                <span>₹999</span>
+                <span>₹499</span>
               </li>
               <li className="flex justify-between items-center">
                 <span>Regular</span>
-                <span>₹1499</span>
+                <span>₹999</span>
               </li>
               <li className="flex justify-between items-center">
                 <span>VIP</span>
-                <span>₹2999</span>
+                <span>₹1499</span>
               </li>
             </ul>
             <Button 
@@ -490,7 +490,7 @@ const HeroSection = ({ setShowRegisterForm }) => {
                 <h3 className="text-xl font-bold text-white mb-2">Early Bird</h3>
                 <span className="px-2 py-1 bg-blue-500/20 text-blue-300 text-xs rounded-full">Limited</span>
               </div>
-              <p className="text-3xl font-bold text-blue-400 mb-4 group-hover:text-blue-300 transition-colors">₹999</p>
+              <p className="text-3xl font-bold text-blue-400 mb-4 group-hover:text-blue-300 transition-colors">₹499</p>
               <ul className="text-white text-left mb-6 space-y-2 flex-grow">
                 <li className="flex items-center">
                   <span className="text-green-400 mr-2">✓</span> Access to all sessions
@@ -513,7 +513,7 @@ const HeroSection = ({ setShowRegisterForm }) => {
                 <h3 className="text-xl font-bold text-white mb-2">Regular</h3>
                 <span className="px-2 py-1 bg-blue-500/20 text-blue-300 text-xs rounded-full">Popular</span>
               </div>
-              <p className="text-3xl font-bold text-blue-400 mb-4 group-hover:text-blue-300 transition-colors">₹1499</p>
+              <p className="text-3xl font-bold text-blue-400 mb-4 group-hover:text-blue-300 transition-colors">₹999</p>
               <ul className="text-white text-left mb-6 space-y-2 flex-grow">
                 <li className="flex items-center">
                   <span className="text-green-400 mr-2">✓</span> Access to all sessions
@@ -539,7 +539,7 @@ const HeroSection = ({ setShowRegisterForm }) => {
                 <h3 className="text-xl font-bold text-white mb-2">VIP</h3>
                 <span className="px-2 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">Premium</span>
               </div>
-              <p className="text-3xl font-bold text-purple-400 mb-4 group-hover:text-purple-300 transition-colors">₹2999</p>
+              <p className="text-3xl font-bold text-purple-400 mb-4 group-hover:text-purple-300 transition-colors">₹1499</p>
               <ul className="text-white text-left mb-6 space-y-2 flex-grow">
                 <li className="flex items-center">
                   <span className="text-green-400 mr-2">✓</span> Access to all sessions
