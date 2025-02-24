@@ -170,20 +170,20 @@ const Navbar = ({ setShowRegisterForm }) => {
 const HeroHeader = () => {
   return (
     <>
-      <div className="flex justify-center mt-20 mb-4 sm:mb-6">
-        <div className="rounded-lg p-2 flex items-center gap-12">
-          <img
-            src="/images/4.0.png"
-            alt="Startup Hub"
-            className="w-full max-w-[280px] sm:max-w-[400px] h-auto"
-          />
-          <img
-            src="https://www.bennett.edu.in/wp-content/uploads/2019/10/Bennett-University-logo1-.png"
-            alt="Startup Hub"
-            className="w-full max-w-[260px] sm:max-w-[260px] h-auto"
-          />
-        </div>
-      </div>
+      <div className="flex justify-center mt-10 sm:mt-20 mb-4 sm:mb-6 px-4 sm:px-0">
+  <div className="rounded-lg p-2 flex flex-col sm:flex-row items-center gap-6 sm:gap-12">
+    <img
+      src="/images/4.0.png"
+      alt="Startup Hub"
+      className="w-full max-w-[200px] sm:max-w-[280px] md:max-w-[400px] h-auto"
+    />
+    <img
+      src="https://www.bennett.edu.in/wp-content/uploads/2019/10/Bennett-University-logo1-.png"
+      alt="Bennett University"
+      className="w-full max-w-[180px] sm:max-w-[220px] md:max-w-[260px] h-auto"
+    />
+  </div>
+</div>
       <p className="text-white mb-2 text-sm sm:text-base">Presents Bennett University</p>
       <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-8xl font-bold text-white mb-3 sm:mb-4">
         E-SUMMIT'25
