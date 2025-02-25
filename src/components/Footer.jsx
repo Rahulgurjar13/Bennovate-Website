@@ -259,7 +259,7 @@ const Footer = () => {
           <span>•</span>
           <span>All rights reserved</span>
         </p>
-        <p className="mt-2 text-sm text-white">Designed with 💜 by Spark E-Cell Tech Team</p>
+        <p className="mt-2 text-sm text-white">Designed with 💜 by Rahul gujjar</p>
       </div>
 
       {/* Add CSS for animations */}
